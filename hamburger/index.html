@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+
+    <style>
+      /*
+      .hamburger:hover .line-one,
+      .hamburger:hover .line-two,
+      .hamburger:hover .line-three {
+        transform-origin: 50% 50%;
+        animation: line-grow ease-out 500ms;
+      }
+
+      .hamburger:hover .line-two {
+        animation-delay: 75ms;
+      }
+
+      .hamburger:hover .line-three {
+        animation-delay: 150ms;
+      }
+
+      @keyframes line-grow {
+        0% {
+          transform: scaleX(1);
+        }
+        50% {
+          transform: scaleX(1.5);
+        }
+        100% {
+          transform: scaleX(1);
+        }
+      } */
+    </style>
   </head>
   <body>
     <svg
@@ -20,15 +50,17 @@
         y2="42"
         fill="none"
         stroke="#000"
+        stroke-width="4"
       ></line>
       <line
         class="line-two"
-        x1="50"
-        y1="75"
+        x1="25"
+        y1="50"
         x2="75"
         y2="50"
         fill="none"
         stroke="#000"
+        stroke-width="4"
       ></line>
       <line
         class="line-one"
@@ -38,7 +70,11 @@
         y2="58"
         fill="none"
         stroke="#000"
+        stroke-width="4"
       ></line>
     </svg>
+
+    <script src="js/script.js"></script>
+    <script src="js/src/minified/TweenMax.min.js"></script>
   </body>
 </html>
